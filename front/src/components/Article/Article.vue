@@ -164,7 +164,7 @@ export default {
   .catalog
     box-shadow: 0px 1px 1px #7D7D7D
     position: fixed
-    width: 220px
+    width: 225px
     top: 110px
     left: 50%
     margin-left: 270px
@@ -175,7 +175,7 @@ export default {
       padding: 5px 0
       border-bottom: 1px dashed #ddd
     .catalog-wrapper
-      padding: 5px 0
+      padding: 5px 6px
       max-height: 400px
       padding-left: 20px
       overflow-y: auto

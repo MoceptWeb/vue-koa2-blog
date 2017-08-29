@@ -3,8 +3,7 @@
     <nav class="nav cf">
       <router-link to="/articles">
         <div class="nav-logo">
-          <span class="name">twinkle</span>
-          <span class="sign">{{ sign[0] }}</span>
+          <span class="name">twinkle'blog</span>
         </div>
       </router-link>
       <ul class="nav-list">
@@ -69,8 +68,9 @@ header
       span
         display: block
       span.name
-        height: 32px
+        height: 60px
         font-size: 31px
+        line-height: 60px
         padding-left: 6px
         font-family: 'Dancing in the Rainbow'
       span.sign
@@ -106,32 +106,12 @@ header
          display: block
    .nav-aside-show 
     display: block
-//先让签名隐藏
-@media screen and (max-width: 530px)
-  header
-    .nav
-      .nav-logo
-        span.sign
-          display: none
-        span.name
-          height: 60px
-          line-height: 60px
 //签名和名字居中，同时3个小点显示出来
 @media screen and (max-width: 480px)
   header
       .nav
         position: relative
         text-align: center
-        .nav-logo
-          float: none
-          display: inline-block
-          span.sign
-            display: block
-            font-size: 16px
-          span.name
-            height: 30px
-            line-height: 40px
-            font-size: 25px
         .nav-list
           display: none
           float: none
@@ -153,10 +133,4 @@ header
         .nav-logo
           float: none
           display: inline-block
-          span.name
-            font-size: 18px
-            height: 60px
-            line-height: 60px
-          span.sign
-            display: none
 </style>
