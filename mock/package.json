@@ -1,0 +1,11 @@
+{
+  "name": "mock",
+  "version": "1.0.0",
+  "description": "json-server --watch db.json --port 9090",
+  "main": "index.js",
+  "scripts": {
+    "mock": "json-server --watch db.json --port 9090"
+  },
+  "author": "",
+  "license": "ISC"
+}
