@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon app.js"
   },
   "author": "sinner77",
   "license": "ISC",
@@ -16,6 +16,10 @@
     "md5": "^2.2.1",
     "moment": "^2.18.1",
     "mongoose": "^4.9.9",
+    "request": "^2.85.0",
     "tracer": "^0.8.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
   }
 }

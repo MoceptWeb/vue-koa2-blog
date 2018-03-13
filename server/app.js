@@ -11,6 +11,9 @@ const response = require('./middlewares/response.js');
 //try/catch中间件
 const errorHandle = require('./middlewares/errorHandle.js');
 
+// 转发特定前缀的api给真正的后端
+const proxy = require('./middlewares/proxyRequest')
+
 //initAdmin中间件
 const initAdmin = require('./middlewares/initAdmin.js');
 
@@ -48,6 +51,9 @@ app.use(response);
 //使用errorHandle中间件
 app.use(errorHandle);
 
+app.use(proxy(config.api.proxyApi, {
+    target: config.api.url
+}))
 
 //使用initAdmin中间件
 app.use(initAdmin);
